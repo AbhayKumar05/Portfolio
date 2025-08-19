@@ -6,7 +6,7 @@ export default function Recruiters() {
     <div className="recruiters-bg-container">
       <video
         className="recruiters-bg-video"
-        src="/videos/office.mp4"
+        src="/videos/newrecruiter.mp4"
         autoPlay
         loop
         muted
