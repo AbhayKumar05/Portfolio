@@ -1,0 +1,66 @@
+.recruiters-bg-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.recruiters-bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  width: auto;
+  height: auto;
+  z-index: 1;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.recruiters-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  pointer-events: none;
+}
+
+.recruiters-overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.recruiters-overlay p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.recruiters-buttons {
+  display: flex;
+  gap: 1.5rem;
+  pointer-events: auto;
+}
+
+.recruiters-buttons button {
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  background: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.recruiters-buttons button:hover {
+  background: #0056b3;
+}
