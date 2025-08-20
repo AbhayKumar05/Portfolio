@@ -42,8 +42,13 @@
 }
 
 .recruiters-overlay p {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  margin: 2 rem 0;
+  max-width: 90%;
+  line-length:1.5;
+  font-weight: 300;
+  text-align: left;;
 }
 
 .recruiters-buttons {
