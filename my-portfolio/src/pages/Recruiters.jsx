@@ -29,5 +29,6 @@ export default function Recruiters() {
         </div>
       </div>
     </div>
+    //TO:DO- add cv file (cv.pdf)
   );
 }
