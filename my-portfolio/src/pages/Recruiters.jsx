@@ -29,6 +29,17 @@ export default function Recruiters() {
         </div>
       </div>
     </div>
+    {/* Carousel Section - now below video/overlay */}
+    <div className="recruiters-carousel-bg">
+      <div className="recruiters-carousel">
+        <div className="carousel-box" onClick={() => window.open('/projects', '_self')}>Projects</div>
+        <div className="carousel-box" onClick={() => window.open('/adventurer', '_self')}>Adventurer</div>
+        <div className="carousel-box" onClick={() => window.open('/contact', '_self')}>Contact</div>
+        <div className="carousel-box" onClick={() => window.open('/recruiters', '_self')}>Recruiters</div>
+        <div className="carousel-box" onClick={() => window.open('/whoswatching', '_self')}>Who's Watching</div>
+      </div>
+    </div>
+    
     //TO:DO- add cv file (cv.pdf)
   );
 }
