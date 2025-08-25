@@ -3,13 +3,13 @@
 .recruiters-carousel-bg {
   width: 100vw;
   background: #111;
-  padding: 3.5rem 0 2.5rem 0;
+  padding: 4rem 0 2.5rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 3;
   position: relative;
-  margin-top: 2rem;
+  margin-top: 0;
 }
 
 .recruiters-carousel {
@@ -77,12 +77,12 @@
   align-items: center;
   justify-content: center;
   color: #fff;
-  text-align: center;
   pointer-events: none;
 }
 
 .recruiters-overlay h1 {
   font-size: 2rem;
+  text-align: left;
   margin-bottom: 0.5rem;
 }
 
