@@ -24,7 +24,7 @@
 }
 
 .carousel-box {
-  min-width: 160px;
+  min-width: 190px;
   min-height: 120px;
   background: #232323;
   color: #fff;
@@ -135,3 +135,22 @@
 }
 
 
+.carousel-box:nth-child(1){
+  background-image: url(profiles/projects.png);
+}
+
+.carousel-box:nth-child(2){
+  background-image: url(profiles/projects.png);
+}
+
+.carousel-box:nth-child(3){
+  background-image: url(profiles/projects.png);
+}
+
+.carousel-box:nth-child(4){
+  background-image: url(profiles/projects.png);
+}
+
+.carousel-box:nth-child(5){
+  background-image: url(profiles/projects.png);
+}
