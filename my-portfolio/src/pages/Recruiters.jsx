@@ -31,6 +31,8 @@ export default function Recruiters() {
         </div>
       </div>
       {/* Carousel Section - now below video/overlay */}
+      {/*<h1 className="recruiters-carousel-title">Today's Top Picks for recruiter</h1>*/}
+      
       <div className="recruiters-carousel-bg">
         <div className="recruiters-carousel">
           <div className="carousel-box" onClick={() => window.open('/projects', '_self')}>Projects</div>

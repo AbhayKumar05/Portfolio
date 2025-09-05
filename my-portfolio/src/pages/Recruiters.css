@@ -3,7 +3,7 @@
 .recruiters-carousel-bg {
   width: 100vw;
   background: #111;
-  padding: 4rem 0 2.5rem 0;
+  padding: 1rem 0 2.5rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,26 +23,6 @@
   justify-content: center;
 }
 
-.carousel-box {
-  min-width: 190px;
-  min-height: 250px;
-  background: #232323;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.3rem;
-  font-weight: 500;
-  border-radius: 16px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.18);
-  cursor: pointer;
-  transition: background 0.2s, transform 0.2s;
-  user-select: none;
-}
-.carousel-box:hover {
-  background: #333;
-  transform: translateY(-6px) scale(1.04);
-}
 .recruiters-bg-container {
   position: relative;
   width: 100vw;
@@ -118,6 +98,15 @@
 
 }
 
+.recruiters-carousel-title{
+  padding-top: 5rem;
+  color: #fff;
+  background: #111;
+  text-align: center;
+  font-size: 2rem;
+  font-weight:600;
+}
+
 .recruiters-buttons button:first-child {
   background: #fff;
   color: #222;
@@ -136,11 +125,11 @@
 
 
 .carousel-box:nth-child(1){
-  background-image: url(profiles/projects.png);
+  background-image: url(profiles/project.png);
 }
 
 .carousel-box:nth-child(2){
-  background-image: url(profiles/projects.png);
+  background-image: url(profiles/skills1.png);
 }
 
 .carousel-box:nth-child(3){
@@ -157,20 +146,20 @@
 }
 
 
-
 .carousel-box {
-  width: 200px; 
-  height: 200px; 
+  min-width: 200px;
+  min-height: 250px;
+  background: #232323;
   background-size: contain;   
-  background-repeat: no-repeat; 
+  /*background-repeat: no-repeat;*/ 
   background-position: center;  
   border-radius: 6px;
   cursor: pointer;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   color: white;
-  font-weight: bold;
-  padding: 10px;
+  font-size: 1.3rem;
+  font-weight: 500;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
