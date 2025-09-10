@@ -26,7 +26,7 @@
 .recruiters-bg-container {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 95vh;
   overflow: hidden;
 }
 
@@ -43,6 +43,8 @@
   filter: brightness(0.6);
   filter: blur(8px);
   -webkit-filter: blur(5px);
+  background: linear-gradient(to right, black, transparent 20%, transparent 80%, black);
+
 }
 
 .recruiters-overlay {
@@ -151,6 +153,8 @@
   min-height: 250px;
   background: #232323;
   background-size: contain;   
+    background: linear-gradient(to right, black, transparent 20%, transparent 80%, black);
+  background-size: cover;
   /*background-repeat: no-repeat;*/ 
   background-position: center;  
   border-radius: 6px;
