@@ -155,7 +155,6 @@
   background-size: contain;   
     background: linear-gradient(to right, black, transparent 20%, transparent 80%, black);
   background-size: cover;
-  /*background-repeat: no-repeat;*/ 
   background-position: center;  
   border-radius: 6px;
   cursor: pointer;
