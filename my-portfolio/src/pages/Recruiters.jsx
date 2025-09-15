@@ -21,10 +21,10 @@ export default function Recruiters() {
         />
         <div className="recruiters-overlay">
           <h1>ABHAY KUMAR</h1>
-           <p> Computer Engineering graduate from IADE Lisbon, Portugal.</p>
-           <p> Skilled in React, Spring Boot, Android, and APIs.</p>
-           <p> Experience in internships, projects, and hackathons.</p>
-           <p>Co-developed award-winning donation platform Heartware.</p>
+           <p> Computer Engineering graduate from IADE Lisbon, Portugal.
+            Skilled in React, Spring Boot, Web, Android, and APIs.</p>
+           <p> Experience in internships, projects, and hackathons.
+           Co-developed award-winning donation platform Heartware.</p>
            <p> Passionate about impactful, scalable, user-focused solutions.</p>
           <div className="recruiters-buttons">
             <button onClick={handleShowCV}>▶ Resume</button>

@@ -37,7 +37,7 @@
   min-width: 100vw;
   min-height: 100vh;
   width: auto;
-  height: auto;
+  height: 100;
   z-index: -1000;
   object-fit: cover;
   filter: brightness(0.6);
@@ -47,6 +47,7 @@
 
 }
 
+/*
 .recruiters-overlay {
   position: absolute;
   top: 0;
@@ -60,7 +61,26 @@
   justify-content: center;
   color: #fff;
   pointer-events: none;
+}*/
+
+
+.recruiters-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  /*align-items: flex-start; */
+  justify-content: center;
+  color: #fff;
+  margin-left: 10%;
+  pointer-events: none;
+  text-align: left; 
 }
+
 
 .recruiters-overlay h1 {
   font-size: 2rem;
@@ -69,11 +89,15 @@
 }
 
 .recruiters-overlay p {
-  font-size: 1.35rem;
+  font-size: 1.15rem;
   max-width: 100%;
   font-weight: 100;
   margin: 0.1rem 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: left;
+}
+
+.recruiters-overlay p:last-child {
   text-align: left;
 }
 
@@ -84,7 +108,6 @@
   pointer-events: auto;
   width: 100%;
   max-width: 90%;
-  margin: 0 auto;
 }
 
 .recruiters-buttons button {
@@ -100,6 +123,10 @@
   text-align: left;
   padding-left: 10px;
 
+}
+
+.recruiters-buttons button:first-child{
+  margin-top: 2rem;
 }
 
 .recruiters-carousel-title{
