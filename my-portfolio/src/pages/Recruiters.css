@@ -76,7 +76,7 @@
   /*align-items: flex-start; */
   justify-content: center;
   color: #fff;
-  margin-left: 10%;
+  margin-left: 5%;
   pointer-events: none;
   text-align: left; 
 }
@@ -156,7 +156,7 @@
 
 
 .carousel-box:nth-child(1){
-  background-image: url(profiles/project.png);
+  background-image: url(profiles/project.gif);
 }
 
 .carousel-box:nth-child(2){
@@ -172,7 +172,7 @@
 }
 
 .carousel-box:nth-child(5){
-  background-image: url(profiles/contactme.png);
+  background-image: url(profiles/contact.gif);
   object-fit:cover;
 }
 
@@ -180,18 +180,17 @@
 .carousel-box {
   min-width: 200px;
   min-height: 250px;
-  background: #232323;
   background-size: contain;   
-    background: linear-gradient(to right, black, transparent 20%, transparent 80%, black);
+  background: linear-gradient(to right, black, transparent 20%, transparent 80%, black);
   background-size: cover;
   background-position: center;  
   border-radius: 6px;
   cursor: pointer;
   display: flex;
   align-items: center;
+  color: rgb(255, 255, 255);
   justify-content: center;
-  color: white;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   font-weight: 500;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }

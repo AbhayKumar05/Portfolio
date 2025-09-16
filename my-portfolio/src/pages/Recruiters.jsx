@@ -1,5 +1,7 @@
 import React from "react";
 import "./Recruiters.css";
+import Navbar from "../components/Navbar"; 
+
 
 export default function Recruiters() {
   const handleShowCV = () => {
@@ -10,6 +12,7 @@ export default function Recruiters() {
   };
   return (
     <>
+      <Navbar />
       <div className="recruiters-bg-container">
         <video
           className="recruiters-bg-video"
