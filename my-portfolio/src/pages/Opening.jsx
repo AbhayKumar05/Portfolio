@@ -9,10 +9,12 @@ export default function Opening() {
   const handleClick = () => {
     setAnimate(true);
 
-    // Wait until animation ends before navigating
+    const audio = new Audio("/audio/intro.mp3"); 
+    audio.play();
+
     setTimeout(() => {
       navigate("/watching");
-    }, 600); // matches your CSS transition duration
+    }, 1000); 
   };
 
   return (
