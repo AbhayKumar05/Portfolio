@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 
 export default function Recruiters() {
   const handleShowCV = () => {
-    window.open("/cv.pdf", "_blank");
+    window.open("doc/AbhayKumar_CV.pdf", "_blank");
   };
   const handleLinkedIn = () => {
     window.open("https://www.linkedin.com/in/abhay-kumar-13831b248", "_blank");
