@@ -1,0 +1,64 @@
+.recruiters-project {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem;
+  padding-top: 7rem;
+}
+
+.project-card {
+  width: 280px;
+  background: #1c1c1c;
+  border-radius: 10px;
+  overflow: hidden;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(89, 0, 0, 1.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top Half Image */
+.project-image img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+/* Bottom Half Text */
+.project-info {
+  padding: 1rem;
+  flex-grow: 1;
+}
+
+.project-info h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-info p {
+  font-size: 0.85rem;
+  font-weight: 300;
+  line-height: 1.4;
+  margin-bottom: 0.8rem;
+}
+
+/* Tech Buttons */
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-btn {
+  background: #292929;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.8rem;
+  cursor: default;
+  transition: background 0.3s;
+}
+
