@@ -22,6 +22,7 @@ export default function Navbar() {
 
       <div className="navbar-center">
         <ul className="nav-links">
+          <li><a href="/contact">Home</a></li>
           <li><a href="/projects">Projects</a></li>
           <li><a href="/recruiters">Hire Me</a></li>
           <li><a href="/contact">Contact</a></li>

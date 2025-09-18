@@ -24,7 +24,6 @@
 .profile {
   text-align: center;
   cursor: pointer;
-  transition: transform 0.3s;
 }
 
 .profile img {
@@ -33,12 +32,10 @@
   object-fit: cover;
   border-radius: 4px;
   border: 3px solid transparent;
-  transition: border 0.3s;
 }
 
 .profile:hover img {
   border-color: #e50914;
-  transform: scale(1.05);
   border-radius: 4px;
 }
 

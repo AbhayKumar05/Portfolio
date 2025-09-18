@@ -42,7 +42,7 @@ export default function Recruiters() {
         <div className="recruiters-carousel">
           <div className="carousel-box" onClick={() => window.open('/projects', '_self')}>Projects</div>
           <div className="carousel-box" onClick={() => window.open('/adventurer', '_self')}>Skills</div>
-          <div className="carousel-box" onClick={() => window.open('/contact', '_self')}>Who's Watching </div>
+          <div className="carousel-box" onClick={() => window.open('/contact', '_self')}>Education </div>
           <div className="carousel-box" onClick={() => window.open('/recruiters', '_self')}>Experiences</div>
           <div  className="carousel-box" onClick={() => window.open('/whoswatching', '_self')}>Contact me</div>
         </div>
