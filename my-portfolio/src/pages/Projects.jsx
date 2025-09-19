@@ -1,6 +1,6 @@
 import React from "react";
 import "./Project.css";
-import Navbar from "../components/Navbar"; // adjust path if Navbar is in another folder
+import Navbar from "../components/Navbar"; 
 
 const projectData = [
   {
@@ -40,10 +40,8 @@ const projectData = [
 export default function Projects() {
   return (
     <>
-      {/* Navbar at the top */}
       <Navbar />
 
-      {/* Projects Section */}
       <div className="projects-content">
         <div className="recruiters-project">
           {projectData.map((proj) => (

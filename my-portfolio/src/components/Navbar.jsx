@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom"; 
 import "./Navbar.css";
 
 export default function Navbar() {
@@ -15,22 +16,30 @@ export default function Navbar() {
   return (
     <nav className={`navbar ${scrolled ? "navbar--scrolled" : ""}`}>
       <div className="navbar-left">
-        <a href="/" className="navbar-logo">
-          <img src="https://fontmeme.com/permalink/250916/af5c7bd6608379fee8c91dbd87b5006b.png" alt="netflix-font" border="0"></img>
-        </a>
+        <Link to="/watching" className="navbar-logo"> 
+          <img
+            src="https://fontmeme.com/permalink/250916/af5c7bd6608379fee8c91dbd87b5006b.png"
+            alt="netflix-font"
+            border="0"
+          />
+        </Link>
       </div>
 
       <div className="navbar-center">
         <ul className="nav-links">
-          <li><a href="/contact">Home</a></li>
-          <li><a href="/projects">Projects</a></li>
-          <li><a href="/recruiters">Hire Me</a></li>
-          <li><a href="/contact">Contact</a></li>
+          <li><Link to="/watching">Home</Link></li> 
+          <li><Link to="/projects">Projects</Link></li> 
+          <li><Link to="/hireme">Hire Me</Link></li>
         </ul>
       </div>
 
       <div className="navbar-right">
-        <a href="/cv.pdf" target="_blank" rel="noopener noreferrer" className="resume-btn">
+        <a
+          href="/cv.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="resume-btn"
+        >
           Resume
         </a>
       </div>
