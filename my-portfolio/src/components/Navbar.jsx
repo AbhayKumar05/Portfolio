@@ -35,7 +35,7 @@ export default function Navbar() {
 
       <div className="navbar-right">
         <a
-          href="/cv.pdf"
+          href="doc/AbhayKumar_CV.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="resume-btn"
