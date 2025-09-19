@@ -29,7 +29,7 @@ export default function Navbar() {
         <ul className="nav-links">
           <li><Link to="/watching">Home</Link></li> 
           <li><Link to="/projects">Projects</Link></li> 
-          <li><Link to="/hireme">Hire Me</Link></li>
+          <li><Link to="/contact">Hire Me</Link></li>
         </ul>
       </div>
 

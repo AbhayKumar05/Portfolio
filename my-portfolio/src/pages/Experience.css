@@ -1,0 +1,73 @@
+.experience-content {
+  padding: 40px;
+  text-align: center;
+}
+
+.experience-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-decoration: underline;
+}
+
+.experience-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.experience-card {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #111;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+}
+
+.experience-image img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background: #fff;
+}
+
+.experience-info {
+  padding: 15px;
+  text-align: left;
+}
+
+.experience-info h3 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.experience-info h4 {
+  margin: 5px 0;
+  font-size: 1.1rem;
+  color: #aaa;
+}
+
+.duration {
+  font-style: italic;
+  color: #ccc;
+}
+
+.linkedin-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #0a66c2;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.linkedin-link:hover {
+  text-decoration: underline;
+}
