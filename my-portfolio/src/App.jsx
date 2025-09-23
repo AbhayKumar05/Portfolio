@@ -9,6 +9,7 @@ import Opening from "./pages/Opening";
 import Skills from "./pages/Skills";
 import Education from "./pages/Education";
 import Experience from "./pages/Experience";
+import Developer from "./pages/Developer";
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
       <Route path="/skills" element={<Skills />} />
       <Route path="/education" element={<Education />} />
       <Route path="/experience" element={<Experience />} />
+      <Route path="/developer" element={<Developer />} />
       <Route path="/" element={<Opening />} />
     </Routes>
   );
