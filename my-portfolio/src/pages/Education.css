@@ -37,12 +37,14 @@
 .education-info h3 {
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
+  margin: 10px;
 }
 
 .education-info p {
   font-size: 0.9rem;
   line-height: 1.4;
   color: #c2c2c2;
+  margin: 20px;
 }
 .education-info a {
   display: inline-block;

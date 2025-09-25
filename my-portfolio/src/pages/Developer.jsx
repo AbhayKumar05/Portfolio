@@ -24,8 +24,8 @@ export default function Developer() {
       {/* Hero / Recruiter Intro Section */}
       <div className="recruiters-bg-container">
         <video
-          className="recruiters-bg-video"
-          src="/videos/newrecruiter.mp4"
+          className="recruiters-bg-video-dev"
+          src="/videos/int.mp4"
           autoPlay
           loop
           muted

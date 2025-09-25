@@ -1,0 +1,43 @@
+.recruiters-carousel-adventurer {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 1rem 0;
+    width: 100%;
+    justify-content: center;
+    padding-top: 20px;
+    gap: 1rem;
+}
+
+.recruiters-carousel-adventurer :hover {
+  transition: transform 0.3s ease;
+    transform: scale(1.05);
+    gap: 1rem;
+}
+
+
+.carousel-box-adventurer {
+    min-width: 200px;
+    height: 180px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    color: white;
+    background-image: url(profiles/advv.png);
+    object-fit:cover;
+}
+
+.recruiters-carousel-dev-bg-adventurer {
+    width: 100vw;
+    background: #080808;
+    padding: 1rem 0 2.5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    position: relative;
+    margin-top: 0;
+}

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Contact.css";
 import Navbar from "../components/Navbar"; 
 
 {/*}
@@ -66,7 +67,7 @@ export default function Projects() {
         <div className="recruiters-project">
           {projectData.map((proj) => (
             <div className="project-card" key={proj.id}>
-              <div className="project-info">
+              <div className="contact-info">
               <h3>{proj.title}</h3>
               <p>{proj.description}</p>
               <p>
@@ -78,7 +79,7 @@ export default function Projects() {
               <div className="contact-info">
                 <p>📧 {proj.contact.email}</p>
                 <p>📱 {proj.contact.phone}</p>
-                <p>☕ {proj.contact.note}</p>
+                <p> {proj.contact.note}</p>
               </div>
             </div>
 

@@ -115,12 +115,12 @@
   overflow: hidden;
 }
 
-.recruiters-bg-video {
+.recruiters-bg-video-dev{
   position: absolute;
   top: 0;
   left: 0;
   min-width: 100vw;
-  min-height: 100vh;
+  min-height: 110vh;
   width: auto;
   height: 100;
   z-index: -1000;
