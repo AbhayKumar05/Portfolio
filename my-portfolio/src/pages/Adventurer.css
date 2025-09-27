@@ -1,43 +1,65 @@
 .recruiters-carousel-adventurer {
-    display: flex;
-    flex-direction: row;
-    overflow-x: auto;
-    padding: 1rem 0;
-    width: 100%;
-    justify-content: center;
-    padding-top: 20px;
-    gap: 1rem;
+display: flex;
+flex-direction: row;
+gap: 1rem;
+overflow-x: auto;
+scroll-snap-type: x mandatory;
+-webkit-overflow-scrolling: touch;
+padding: 1rem;
+width: 100%;
+justify-content: flex-start; 
+padding-top: 40px;
 }
-
-.recruiters-carousel-adventurer :hover {
-  transition: transform 0.3s ease;
-    transform: scale(1.05);
-    gap: 1rem;
-}
-
 
 .carousel-box-adventurer {
-    min-width: 200px;
-    height: 180px;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: transform 0.5s ease;
-    color: white;
-    background-image: url(profiles/advv.png);
-    object-fit:cover;
+flex: 0 0 auto;
+width: clamp(140px, 25vw, 220px);   
+height: clamp(160px, 30vw, 220px);  
+border-radius: 8px;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+background-image: url(profiles/advv.png);
+background-size: cover;
+background-position: center;
+color: white;
+gap: 0.5rem;
+font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+scroll-snap-align: center;
 }
 
-.recruiters-carousel-dev-bg-adventurer {
-    width: 100vw;
-    background: #080808;
-    padding: 1rem 0 2.5rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 3;
-    position: relative;
-    margin-top: 0;
+.carousel-box-adventurer:hover {
+transform: scale(1.05);
+box-shadow: 0 6px 16px rgba(60, 60, 60, 0.4);
 }
+
+/* --- Tablet  --- */
+@media (max-width: 768px) {
+.recruiters-carousel-adventurer {
+gap: 0.8rem;
+}
+
+.carousel-box-adventurer {
+width: clamp(120px, 30vw, 180px);
+height: clamp(140px, 35vw, 200px);
+font-size: 1rem;
+}
+}
+
+/* --- Mobile  --- */
+@media (max-width: 480px) {
+.recruiters-carousel-adventurer {
+gap: 0.6rem;
+padding: 0.5rem;
+}
+
+.carousel-box-adventurer {
+width: clamp(100px, 40vw, 140px);
+height: clamp(120px, 45vw, 160px);
+font-size: 0.9rem;
+}
+}
+
+

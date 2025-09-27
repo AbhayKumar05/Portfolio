@@ -1,69 +1,94 @@
 .navbar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 70px;
-  padding: 0 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: transparent; 
-  transition: background-color 0.3s ease;
-  z-index: 1000;
-}
-
-.navbar-center {
-  text-align: center;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 70px;
+padding: 0 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-color: transparent;
+transition: background-color 0.3s ease;
+z-index: 1000;
 }
 
 .navbar--scrolled {
-  background-color: rgba(0, 0, 0, 0.85);
+background-color: rgba(0, 0, 0, 0.85);
 }
 
-.navbar-logo {
-  color: #fff;
-  font-size: 1.5rem;
-  font-weight: 700;
-  text-decoration: none;
-}
-.navbar-logo .highlight {
-  color: #e50914; 
+.navbar-left img {
+max-height: 50px;
+width: auto;
+transition: max-height 0.3s ease;
 }
 
 .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-  margin: 0;
-  padding: 0;
+list-style: none;
+display: flex;
+gap: 30px;
+margin: 0;
+padding: 0;
 }
+
 .nav-links a {
-  color: #fff;
-  font-size: 1rem;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s;
+color: #fff;
+font-size: 1rem;
+text-decoration: none;
+font-weight: 500;
+transition: color 0.3s;
 }
 .nav-links a:hover {
-  color: #e50914;
+color: #e50914;
 }
 
 .resume-btn {
-  background-color: #e50914;
-  color: #fff;
-  padding: 8px 16px;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: background-color 0.3s;
+background-color: #e50914;
+color: #fff;
+padding: 8px 16px;
+border-radius: 4px;
+text-decoration: none;
+font-weight: 500;
+transition: background-color 0.3s;
+font-size: 1rem;
 }
 .resume-btn:hover {
-  background-color: #f40612;
+background-color: #f40612;
 }
 
+/* --- Responsive --- */
 @media (max-width: 768px) {
-  .nav-links {
-    display: none; 
-  }
+.navbar {
+height: 60px;
+padding: 0 20px;
+}
+
+.navbar-left img {
+max-height: 35px;  
+}
+
+.nav-links {
+display: none; 
+}
+
+.resume-btn {
+padding: 6px 12px; 
+font-size: 0.85rem;
+}
+}
+
+@media (max-width: 480px) {
+.navbar {
+height: 55px;
+padding: 0 15px;
+}
+
+.navbar-left img {
+max-height: 28px; 
+}
+
+.resume-btn {
+padding: 5px 10px;
+font-size: 0.75rem;
+}
 }

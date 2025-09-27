@@ -1,4 +1,3 @@
-/* Carousel Styles */
 
 .recruiters-carousel-bg {
   width: 100vw;
@@ -218,4 +217,89 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+.recruiters-carousel-dev {
+display: flex;
+flex-direction: row;
+gap: 1rem;
+overflow-x: auto;
+scroll-snap-type: x mandatory;
+-webkit-overflow-scrolling: touch;
+padding: 1rem;
+width: 100%;
+max-width: 1200px;
+justify-content: flex-start;   
+}
+
+.carousel-box {
+flex: 0 0 auto;
+width: clamp(140px, 25vw, 220px); 
+height: clamp(180px, 35vw, 280px); 
+border-radius: 10px;
+cursor: pointer;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+display: flex;
+align-items: flex-end;
+justify-content: center;
+padding: 10px;
+color: #fff;
+font-size: clamp(0.9rem, 2.5vw, 1.3rem);
+font-weight: 600;
+text-shadow: 0 2px 6px rgba(0, 0, 0, 1.5);
+scroll-snap-align: center;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-box:hover {
+transform: scale(1.05);
+box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+}
+
+/* --- Tablet - useless idk --- */
+@media (max-width: 768px) {
+.recruiters-carousel-dev {
+gap: 0.8rem;
+}
+
+.carousel-box {
+width: clamp(120px, 30vw, 180px);
+height: clamp(150px, 40vw, 220px);
+font-size: 1rem;
+}
+}
+
+/* --- Mobile  --- */
+@media (max-width: 480px) {
+.recruiters-carousel-dev {
+gap: 0.6rem;
+padding: 0.5rem;
+}
+
+.carousel-box {
+width: clamp(100px, 40vw, 140px);
+height: clamp(130px, 50vw, 180px);
+font-size: 0.9rem;
+}
+
+.recruiters-overlay h1 {
+  font-size: 1.5rem;
+}
+
+.recruiters-overlay p {
+  font-size: 1rem;
+  max-width: 90%;
+}
+}
 

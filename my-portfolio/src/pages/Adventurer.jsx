@@ -21,7 +21,6 @@ export default function Adventurer() {
     <>
       <Navbar />
 
-      {/* Hero Section */}
       <div className="recruiters-bg-container">
         <video
           className="recruiters-bg-video"
@@ -48,7 +47,6 @@ export default function Adventurer() {
         </div>
       </div>
 
-      {/* Adventurer Carousel with External Links */}
       <div className="recruiters-carousel-dev-bg-adventurer">
         <div className="recruiters-carousel-adventurer">
           <div

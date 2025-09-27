@@ -21,7 +21,6 @@ export default function Developer() {
     <>
       <Navbar />
 
-      {/* Hero / Recruiter Intro Section */}
       <div className="recruiters-bg-container">
         <video
           className="recruiters-bg-video-dev"
@@ -49,7 +48,6 @@ export default function Developer() {
         </div>
       </div>
 
-      {/* Carousel Navigation */}
       <div className="recruiters-carousel-dev-bg">
         <div className="recruiters-carousel-dev">
           <div
@@ -86,9 +84,7 @@ export default function Developer() {
         </div>
       </div>
 
-      {/* Services Section */}
       <div className="services-faq-wrapper">
-        {/* FAQ Section */}
         <section className="faq-section">
           <h2 className="section-title">Frequently Asked Questions</h2>
           <div className="faq-container">

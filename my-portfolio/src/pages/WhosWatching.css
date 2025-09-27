@@ -1,46 +1,75 @@
 .whoswatching {
-  min-height: 100vh;
-  background-color: #000;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+min-height: 100vh;
+background-color: #000;
+color: white;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 2rem 1rem;
 }
 
 .whoswatching h1 {
-  font-size: 2rem;
-  margin-bottom: 40px;
+font-size: clamp(1.5rem, 5vw, 2.5rem);
+margin-bottom: 40px;
+text-align: center;
 }
 
 .profiles {
-  display: grid;
-  grid-template-columns: repeat(3, 150px);
-  grid-gap: 30px;
-  justify-content: center;
-  align-items: center;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+gap: 20px;
+justify-content: center;
+align-items: center;
+width: 100%;
+max-width: 800px;
 }
 
 .profile {
-  text-align: center;
-  cursor: pointer;
+text-align: center;
+cursor: pointer;
 }
 
 .profile img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 4px;
-  border: 3px solid transparent;
+width: 100%;
+max-width: 150px;
+aspect-ratio: 1 / 1;
+object-fit: cover;
+border-radius: 6px;
+border: 3px solid transparent;
+transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
 .profile:hover img {
-  border-color: #e50914;
-  border-radius: 4px;
+border-color: #e50914;
+transform: scale(1.05);
+border-radius: 6px;
 }
 
 .profile span {
-  display: block;
-  margin-top: 8px;
-  font-size: 1rem;
+display: block;
+margin-top: 8px;
+font-size: clamp(0.85rem, 2vw, 1rem);
+}
+
+/* --- for smaller screens --- */
+
+@media (max-width: 768px) {
+.profiles {
+gap: 15px;
+}
+
+.profile img {
+max-width: 120px;
+}
+}
+
+@media (max-width: 480px) {
+.profiles {
+gap: 10px;
+}
+
+.profile img {
+max-width: 90px;
+}
 }

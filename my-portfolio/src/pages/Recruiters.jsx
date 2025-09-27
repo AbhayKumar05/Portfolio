@@ -22,7 +22,6 @@ export default function Recruiter() {
     <>
       <Navbar />
 
-      {/* Hero / Recruiter Intro Section */}
       <div className="recruiters-bg-container">
         <video
           className="recruiters-bg-video"
@@ -50,7 +49,6 @@ export default function Recruiter() {
         </div>
       </div>
 
-      {/* Carousel Navigation */}
       <div className="recruiters-carousel-dev-bg">
         <div className="recruiters-carousel-dev">
           <div
@@ -87,7 +85,6 @@ export default function Recruiter() {
         </div>
       </div>
 
-      {/* Services Section */}
       <div className="services-faq-wrapper">
         <section className="services-section">
           <h2 className="section-title">Choose Your Path</h2>
@@ -136,7 +133,6 @@ export default function Recruiter() {
 
         </section>
 
-        {/* FAQ Section */}
         <section className="faq-section">
           <h2 className="section-title">Frequently Asked Questions</h2>
           <div className="faq-container">

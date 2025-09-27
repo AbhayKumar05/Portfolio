@@ -46,12 +46,10 @@ export default function Projects() {
         <div className="recruiters-project">
           {projectData.map((proj) => (
             <div className="project-card" key={proj.id}>
-              {/* Top Half Image */}
               <div className="project-image">
                 <img src={proj.image} alt={proj.title} />
               </div>
 
-              {/* Bottom Half Text */}
               <div className="project-info">
                 <h3>{proj.title}</h3>
                 <p>{proj.description}</p>
