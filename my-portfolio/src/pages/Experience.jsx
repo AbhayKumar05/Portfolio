@@ -26,12 +26,10 @@ export default function Experience() {
         <div className="experience-list">
           {experienceData.map((exp) => (
             <div className="experience-card" key={exp.id}>
-              {/* Top Half Logo/Image */}
               <div className="experience-image">
                 <img src={exp.image} alt={exp.company} />
               </div>
 
-              {/* Bottom Half Info */}
               <div className="experience-info">
                 <h3>{exp.role}</h3>
                 <h4>{exp.company}</h4>

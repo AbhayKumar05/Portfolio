@@ -7,7 +7,7 @@ export default function Recruiter() {
   const [openFAQ, setOpenFAQ] = useState(null);
 
   const handleShowCV = () => {
-    window.open("doc/AbhayKumar_CV.pdf", "_blank");
+    window.open("/doc/AbhayKumar_CV.pdf", "_blank");
   };
 
   const handleLinkedIn = () => {

@@ -20,7 +20,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 cursor: pointer;
-background-image: url(profiles/advv.png);
+background-image: url(/profiles/advv.png);
 background-size: cover;
 background-position: center;
 color: white;
