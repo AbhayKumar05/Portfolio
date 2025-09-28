@@ -24,7 +24,7 @@ export default function Adventurer() {
       <div className="recruiters-bg-container">
         <video
           className="recruiters-bg-video"
-          src="/public/videos/advv.mp4"
+          src="/profiles/advv.mp4"
           autoPlay
           loop
           muted

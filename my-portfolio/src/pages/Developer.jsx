@@ -6,7 +6,7 @@ export default function Developer() {
   const [openFAQ, setOpenFAQ] = useState(null);
 
   const handleShowCV = () => {
-    window.open("/doc/AbhayKumar_CV.pdf", "_blank");
+    window.open("doc/AbhayKumar_CV.pdf", "_blank");
   };
 
   const handleLinkedIn = () => {
@@ -24,7 +24,7 @@ export default function Developer() {
       <div className="recruiters-bg-container">
         <video
           className="recruiters-bg-video-dev"
-          src="/public/videos/int.mp4"
+          src="/profiles/int.mp4"
           autoPlay
           loop
           muted
