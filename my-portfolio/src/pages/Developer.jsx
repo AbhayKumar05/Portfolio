@@ -24,7 +24,7 @@ export default function Developer() {
       <div className="recruiters-bg-container">
         <video
           className="recruiters-bg-video-dev"
-          src="/profiles/int.mp4"
+          src="/profiles/int-fixed.mp4"
           autoPlay
           loop
           muted

@@ -25,7 +25,7 @@ export default function Recruiter() {
       <div className="recruiters-bg-container">
         <video
           className="recruiters-bg-video"
-          src="/profiles/newrecruiter.mp4"
+          src="/profiles/newrecruiter-fixed.mp4"
           autoPlay
           loop
           muted
