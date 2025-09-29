@@ -24,9 +24,12 @@ export default function Recruiter() {
 
       <div className="recruiters-bg-container">
         <video
-          className="recruiters-bg-video"
-          src="/profiles/newrecruiter.mp4" 
-          autoPlay loop muted playsInline
+          className="adventurer-bg-video"
+          src={`${import.meta.env.BASE_URL}profiles/newrecruiter.mp4`}
+          autoPlay
+          loop
+          muted
+          playsInline
         />
         <div className="recruiters-overlay">
           <h1>ABHAY KUMAR</h1>

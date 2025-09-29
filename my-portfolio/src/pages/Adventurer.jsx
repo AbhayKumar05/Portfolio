@@ -23,10 +23,14 @@ export default function Adventurer() {
 
       <div className="recruiters-bg-container">
         <video
-            className="adventurer-bg-video"
-            src="/profiles/advv.mp4"         
-            autoPlay loop muted playsInline
-          />
+          className="adventurer-bg-video"
+          src={`${import.meta.env.BASE_URL}profiles/advv.mp4`}
+          autoPlay
+          loop
+          muted
+          playsInline
+        />
+
         <div className="recruiters-overlay">
           <h1>ABHAY KUMAR</h1>
           <p>
