@@ -24,7 +24,7 @@ export default function Adventurer() {
       <div className="recruiters-bg-container">
         <video
             className="adventurer-bg-video"
-            src="/profiles/advv-small-fixed.mp4"         
+            src="/profiles/advv.mp4"         
             autoPlay loop muted playsInline
           />
         <div className="recruiters-overlay">
