@@ -22,9 +22,9 @@ export default function Adventurer() {
       <Navbar />
 
       <div className="recruiters-bg-container">
-        <img
-          className="adventurer-bg-video" id="iade"
-          src={`${import.meta.env.BASE_URL}profiles/iade-dark.png`}
+        <video
+          className="adventurer-bg-video"
+          src={`${import.meta.env.BASE_URL}profiles/advv.mp4`}
           autoPlay
           loop
           muted
