@@ -14,7 +14,7 @@ export default function Opening() {
 
     setTimeout(() => {
       navigate("/watching");
-    }, 1000); 
+    }, 1800); 
   };
 
   return (

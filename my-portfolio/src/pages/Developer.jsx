@@ -22,14 +22,11 @@ export default function Developer() {
       <Navbar />
 
       <div className="recruiters-bg-container">
-        <video
-          className="recruiters-bg-video-dev"
-          src="/profiles/int-fixed.mp4"
-          autoPlay
-          loop
-          muted
-          playsInline
-        />
+         <video
+            className="recruiters-bg-video"
+            src="/profiles/int-small-fixed.mp4"   
+            autoPlay loop muted playsInline
+          />
         <div className="recruiters-overlay">
           <h1>ABHAY KUMAR</h1>
           <p>
