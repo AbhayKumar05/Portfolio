@@ -22,13 +22,13 @@ export default function Developer() {
       <Navbar />
 
       <div className="recruiters-bg-container">
-         <img
-          className="adventurer-bg-video" id="iade"
-          src={`${import.meta.env.BASE_URL}profiles/iade-dark.png`}
+         <video
+          src="/videos/devop-compressed.mp4"
           autoPlay
           loop
           muted
           playsInline
+          className="recruiters-bg-video"
         />
         <div className="recruiters-overlay">
           <h1>ABHAY KUMAR</h1>
