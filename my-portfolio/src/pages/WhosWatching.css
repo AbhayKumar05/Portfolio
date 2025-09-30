@@ -65,11 +65,14 @@ max-width: 120px;
 }
 
 @media (max-width: 480px) {
-.profiles {
-gap: 10px;
+  .profiles {
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px;
+    width: 100%;
+  }
+
+  .profile img {
+    max-width: 100%; 
+  }
 }
 
-.profile img {
-max-width: 90px;
-}
-}
