@@ -23,14 +23,10 @@ export default function Recruiter() {
       <Navbar />
 
       <div className="recruiters-bg-container">
-        <video
-          src="/profiles/recruter-compressed.mp4"
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="recruiters-bg-video"
-        />
+        <video autoplay muted loop playsinline>
+          <source src="/profiles/recruter-compressed.mp4" type="video/mp4"> </source>
+          Your browser does not support the video tag.
+        </video>
         <div className="recruiters-overlay">
           <h1>ABHAY KUMAR</h1>
           <p>
