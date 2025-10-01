@@ -19,6 +19,11 @@
   flex-direction: column;
 }
 
+.project-card:hover {
+  transform: scale(1.095, 1.05);
+  box-shadow: 0 8px 20px rgba(89, 0, 0, 1.5);
+}
+
 .project-image img {
   width: 100%;
   height: 160px;
