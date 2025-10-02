@@ -22,32 +22,35 @@ export default function Recruiter() {
     <>
       <Navbar />
 
-      <div className="recruiters-bg-container">
-        <video
-          src="/profiles/recruter-compressed.mp4"
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="recruiters-bg-video"
-        />
-        <div className="recruiters-overlay">
-          <h1>ABHAY KUMAR</h1>
-          <p>
-            Computer Engineering graduate from IADE Lisbon, Portugal. Skilled in
-            React, Spring Boot, Web, Android, and APIs.
-          </p>
-          <p>
-            Experience in internships, projects, and hackathons. Co-developed
-            award-winning donation platform Heartware.
-          </p>
-          <p>Passionate about impactful, scalable, user-focused solutions.</p>
-          <div className="recruiters-buttons">
-            <button onClick={handleShowCV}>▶ Resume</button>
-            <button onClick={handleLinkedIn}>ⓘ LinkedIn</button>
-          </div>
+          <div className="recruiters-bg-container">
+      <video
+        src="/profiles/recruter-compressed.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+        preload="auto"
+        poster="/profiles/recruter.png" 
+        className="recruiters-bg-video"
+      />
+      <div className="recruiters-overlay">
+        <h1>ABHAY KUMAR</h1>
+        <p>
+          Computer Engineering graduate from IADE Lisbon, Portugal. Skilled in
+          React, Spring Boot, Web, Android, and APIs.
+        </p>
+        <p>
+          Experience in internships, projects, and hackathons. Co-developed
+          award-winning donation platform Heartware.
+        </p>
+        <p>Passionate about impactful, scalable, user-focused solutions.</p>
+        <div className="recruiters-buttons">
+          <button onClick={handleShowCV}>▶ Resume</button>
+          <button onClick={handleLinkedIn}>ⓘ LinkedIn</button>
         </div>
       </div>
+    </div>
+
 
       <div className="recruiters-carousel-dev-bg">
         <div className="recruiters-carousel-dev">
