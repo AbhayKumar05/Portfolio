@@ -22,14 +22,14 @@ export default function Developer() {
       <Navbar />
 
       <div className="recruiters-bg-container">
-         <video
-          src="/profiles/devop-compressed.mp4"
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="recruiters-bg-video"
-        />
+         <div className="video-background">
+          <iframe
+            src="https://www.youtube.com/embed/onVhbeY7nLM?autoplay=1&mute=1&loop=1&playlist=onVhbeY7nLM&controls=0&showinfo=0&modestbranding=1"
+            allow="autoplay; fullscreen"
+            allowFullScreen
+          ></iframe>
+        </div>
+
         <div className="recruiters-overlay">
           <h1>ABHAY KUMAR</h1>
           <p>
