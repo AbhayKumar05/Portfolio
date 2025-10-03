@@ -70,70 +70,98 @@
 
 
 /* modal css */
-.modal-overlay {
+.project-modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background: rgba(0,0,0,0.85);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 999;
+  z-index: 999000;
+}
+
+.project-modal {
+  background: #111;
+  color: white;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 1200px;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: zoomIn 0.3s ease;
+}
+
+
+.modal-image {
+  flex: 6;
+  overflow: hidden;
+}
+
+.modal-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .modal-content {
-  width: 90%;
-  max-width: 900px;
-  max-height: 90vh;
-  background: #111;
-  border-radius: 10px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-
-.modal-video {
-  width: 100%;
-  height: 40vh;
-  object-fit: cover;
-  background: black;
-}
-
-.modal-details {
-  padding: 1.5rem;
+  flex: 4;
+  padding: 2rem;
   overflow-y: auto;
-  flex-grow: 1;
-  color: #fff;
-  position: relative;
 }
 
-.modal-details h2 {
-  margin-top: 0;
+.modal-content h2 {
+  margin-bottom: 1rem;
 }
 
-.github-link {
+.modal-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #c7c7c7;
+}
+
+.modal-tech {
+  margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tech-badge {
+  background: #292929;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  margin-top: 10px;
+}
+
+.modal-btn {
   display: inline-block;
   margin-top: 1rem;
-  background: #e50914;
-  color: white;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1.2rem;
+  background: #fff;
+  color: #111;
+  font-weight: bold;
   border-radius: 6px;
   text-decoration: none;
 }
 
-.github-link:hover {
-  background: #f40612;
+
+@keyframes zoomIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
 }
 
-.close-btn {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  background: transparent;
-  color: #fff;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
+
+
+
+
+
+
+
+
+

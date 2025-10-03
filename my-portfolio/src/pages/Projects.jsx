@@ -1,79 +1,77 @@
-// Projects.jsx
 import React, { useState } from "react";
 import "./Project.css";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar"; 
+
 
 const projectData = [
   {
     id: 1,
-    title: "CVP360 (Heartware)",
-    github: "https://github.com/Joaquim-Claudio/CVP360",
-    video: "profiles/recruter.mp4", // your new valid video
-    image: "profiles/heartware.jpeg",
-    tech: ["React", ".NET Core", "PostgreSQL"],
+    title: "Heartware",
+    teaser: "Award-winning donation platform for Cruz Vermelha Portuguesa...",
     description:
-      "Donation platform for Cruz Vermelha Portuguesa: web dashboard, secure payments, admin panel, user interface.",
+      "Heartware (CVP360) is an award-winning donation platform built for Cruz Vermelha Portuguesa. It provides a seamless and engaging experience for humanitarian donations, allowing users to donate directly using bank cards. Features include a secure payment system, interactive dashboards for donors and admins, and real-time campaign monitoring. Built with React, .NET Core, PostgreSQL, and deployed on Azure, the platform makes philanthropy more accessible through a modern and intuitive UI.",
+    image: "profiles/heartware.jpeg",
+    tech: ["React", ".NET Core", "PostgreSQL", "Azure", "Figma"],
+    github: "https://github.com/Joaquim-Claudio/CVP360",
   },
   {
     id: 2,
-    title: "AutoCargo (ESP32 Vehicle)",
-    github: "https://github.com/freshmimnt/projeto-esp32",
-    video: "profiles/devop.mp4",
-    image: "profiles/iott.png",
-    tech: ["React", "MQTT", "Node.js", "Socket.io", "Docker"],
+    title: "AutoCargo",
+    teaser: "Manual and autonomous ESP32-powered vehicle with real-time control...",
     description:
-      "Autonomous/manual cargo vehicle using ESP32, dashboard, obstacle detection, slope & battery monitoring.",
+      "AutoCargo is a smart vehicle prototype that supports both manual and autonomous driving using ESP32 with sensors and actuators. It integrates real-time obstacle detection, slope and speed tracking, and battery monitoring. A React web dashboard communicates via MQTT and Socket.io to display live telemetry. Data is processed by a Node.js backend, containerized in Docker for scalability. This project explores IoT, robotics, and real-time systems with a practical dashboard for user interaction.",
+    image: "profiles/iot-project.png",
+    tech: ["React", "MQTT", "Node.js", "Socket.io", "Docker"],
+    github: "https://github.com/freshmimnt/projeto-esp32",
   },
   {
     id: 3,
-    title: "Projeto Software / Magna Opus",
-    github: "https://github.com/AbhayKumar05/Projeto_software",
-    video: "profiles/adven.mp4",
-    image: "profiles/magna.jpeg",
-    tech: ["PHP", "Python", "Java", "Docker", "Kubernetes", "MySQL"],
+    title: "Magna Opus",
+    teaser: "A scalable microservices-based e-commerce bookstore...",
     description:
-      "E-commerce platform (Livraria Online) with microservices, inventory system, AI recommendations, scalable backend.",
+      "Magna Opus is a robust e-commerce bookstore designed with a microservices architecture. It offers inventory management, AI-powered book recommendations, and secure purchasing. Built with PHP, Python, and Java, it leverages MySQL databases for reliable storage. Deployed with Docker and Kubernetes, it ensures scalability, high availability, and fault tolerance. This project demonstrates expertise in distributed systems, cloud deployment, and data-driven personalization for online retail.",
+    image: "profiles/magna.jpeg",
+    tech: ["PHP", "Python", "Java", "MySQL", "Docker", "Kubernetes"],
+    github: "https://github.com/AbhayKumar05/Projeto_software",
   },
   {
     id: 4,
-    title: "LisbonSpots",
-    github: "https://github.com/edjasilva/LisbonSpots",
-    video: null, // maybe no video for this
-    image: "profiles/lisbonspot.png",
-    tech: ["React", "Google Maps API", "Firebase", "Bootstrap"],
+    title: "Lisbon Spots",
+    teaser: "Interactive web app to discover Lisbon’s best photo spots...",
     description:
-      "Web app for photography-lovers: map of Lisbon’s photo spots, filtering, community sharing, routing & statistics.",
+      "Lisbon Spots is a tourism and photography web application that helps users discover and share Lisbon’s hidden gems. It integrates geospatial data and Google Maps API for interactive navigation. Users can filter by categories, create custom routes, and contribute community reviews/photos. Built with Firebase, Android, MySQL, Bootstrap, and Figma, it provides a responsive and modern UI. The project combines data visualization with user engagement for an enhanced travel experience.",
+    image: "profiles/LISBON-PROJECT.png",
+    tech: ["Firebase", "Android", "MySQL", "Bootstrap", "Google Maps API", "Figma"],
+    github: "https://github.com/edjasilva/LisbonSpots",
   },
 ];
 
+
 export default function Projects() {
-  const [openId, setOpenId] = useState(null);
-
-  const openModal = (id) => setOpenId(id);
-  const closeModal = () => setOpenId(null);
-
-  const openProject = projectData.find((p) => p.id === openId);
+  const [activeProject, setActiveProject] = useState(null);
 
   return (
     <>
       <Navbar />
+
       <div className="projects-content">
         <div className="recruiters-project">
           {projectData.map((proj) => (
             <div
               className="project-card"
               key={proj.id}
-              onClick={() => openModal(proj.id)}
+              onClick={() => setActiveProject(proj)}
             >
               <div className="project-image">
                 <img src={proj.image} alt={proj.title} />
               </div>
+
               <div className="project-info">
                 <h3>{proj.title}</h3>
-                <p>{proj.description}</p>
+                <p>{proj.description.slice(0, 120)}...</p>
                 <div className="project-tech">
-                  {proj.tech.map((tech, idx) => (
-                    <button key={idx} className="tech-btn">
+                  {proj.tech.map((tech, index) => (
+                    <button key={index} className="tech-btn">
                       {tech}
                     </button>
                   ))}
@@ -84,47 +82,25 @@ export default function Projects() {
         </div>
       </div>
 
-      {openProject && (
-        <div className="modal-overlay" onClick={closeModal}>
+      {activeProject && (
+        <div className="project-modal-overlay" onClick={() => setActiveProject(null)}>
           <div
-            className="modal-content"
-            onClick={(e) => e.stopPropagation()}
+            className="project-modal"
+            onClick={(e) => e.stopPropagation()} 
           >
-            {openProject.video ? (
-              <video
-                src={`/${openProject.video}`}
-                controls
-                autoPlay
-                className="modal-video"
-              />
-            ) : (
-              <img
-                src={openProject.image}
-                alt={openProject.title}
-                className="modal-video"
-              />
-            )}
-            <div className="modal-details">
-              <h2>{openProject.title}</h2>
-              <p>{openProject.description}</p>
-              <div className="project-tech">
-                {openProject.tech.map((tech, idx) => (
-                  <button key={idx} className="tech-btn">
+            <div className="modal-image">
+              <img src={activeProject.image} alt={activeProject.title} />
+            </div>
+            <div className="modal-content">
+              <h2>{activeProject.title}</h2>
+              <p>{activeProject.description}</p>
+              <div className="modal-tech">
+                {activeProject.tech.map((tech, index) => (
+                  <span key={index} className="tech-badge">
                     {tech}
-                  </button>
+                  </span>
                 ))}
               </div>
-              <a
-                href={openProject.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="github-link"
-              >
-                View on GitHub
-              </a>
-              <button className="close-btn" onClick={closeModal}>
-                ✕
-              </button>
             </div>
           </div>
         </div>
@@ -132,6 +108,7 @@ export default function Projects() {
     </>
   );
 }
+
 
 
 
