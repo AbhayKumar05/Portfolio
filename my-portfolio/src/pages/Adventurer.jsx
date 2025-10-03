@@ -22,13 +22,14 @@ export default function Adventurer() {
       <Navbar />
 
       <div className="recruiters-bg-container">
-      <iframe
-        className="hero-bg-video-iframe"
-        src="https://www.youtube.com/embed/QOtuX0jL85Y?autoplay=1&mute=1&loop=1&playlist=QOtuX0jL85Y&controls=0&modestbranding=1"
-        allow="autoplay; fullscreen"
-        allowFullScreen
-      ></iframe>
-
+         <div className="video-background">
+            <iframe
+              className="video-background"
+              src="https://www.youtube.com/embed/QOtuX0jL85Y?autoplay=1&mute=1&loop=1&playlist=QOtuX0jL85Y&controls=0&modestbranding=1"
+              allow="autoplay; fullscreen"
+              allowFullScreen
+            ></iframe>
+        </div>
 
         <div className="recruiters-overlay">
           <h1>ABHAY KUMAR</h1>
