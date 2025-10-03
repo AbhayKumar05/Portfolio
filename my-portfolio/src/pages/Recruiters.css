@@ -303,3 +303,43 @@ font-size: 0.9rem;
   color: #eaeaea;
   margin: 2rem 0 1rem 0;
 }
+
+
+
+
+
+
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 150vw;
+  min-height: 130vh;
+  width: auto;
+  height: 100;
+  z-index: -1000;
+  object-fit: cover;
+  filter: brightness(0.6);
+  filter: blur(8px);
+  -webkit-filter: blur(5px);
+  background: linear-gradient(to right, black, transparent 20%, transparent 80%, black);
+
+}
+
+.video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none; 
+}
