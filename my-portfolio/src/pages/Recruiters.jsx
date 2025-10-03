@@ -23,16 +23,13 @@ export default function Recruiter() {
       <Navbar />
 
           <div className="recruiters-bg-container">
-      <video
-        src="/profiles/recruter-compressed.mp4"
-        autoPlay
-        loop
-        muted
-        playsInline
-        preload="auto"
-        poster="/profiles/recruter.png" 
-        className="recruiters-bg-video"
-      />
+        <iframe
+          className="hero-bg-video-iframe"
+          src="https://www.youtube.com/embed/kJuceEo-Wvc?autoplay=1&mute=1&loop=1&playlist=kJuceEo-Wvc&controls=0&modestbranding=1"
+          allow="autoplay; fullscreen"
+          allowFullScreen
+        ></iframe>
+
       <div className="recruiters-overlay">
         <h1>ABHAY KUMAR</h1>
         <p>
