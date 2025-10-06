@@ -71,14 +71,14 @@ export default function Projects() {
               <h3>{proj.title}</h3>
               <p>{proj.description}</p>
               <p>
-                🔗 <a href={proj.contact.linkedin} target="_blank" rel="noopener noreferrer">
+                 <a href={proj.contact.linkedin} target="_blank" rel="noopener noreferrer">
                   LinkedIn Profile
                 </a>
               </p>
 
               <div className="contact-info">
-                <p>📧 {proj.contact.email}</p>
-                <p>📱 {proj.contact.phone}</p>
+                <p> {proj.contact.email}</p>
+                <p> {proj.contact.phone}</p>
                 <p> {proj.contact.note}</p>
               </div>
             </div>
