@@ -24,12 +24,13 @@ export default function Adventurer() {
 
       <div className="recruiters-bg-container">
          <div className="video-background">
-            <iframe
-              className="video-background"
-              src="https://www.youtube.com/embed/kJuceEo-Wvc?autoplay=1&mute=1&loop=1&playlist=kJuceEo-Wvc&controls=0&modestbranding=1&showinfo=0&fs=0&rel=0&disablekb=1modestbranding=1&controls=0&fs=0&rel=0&showinfo=0&disablekb=1"
-              allow="autoplay; fullscreen"
-              allowFullScreen
-            ></iframe>
+            <video
+              className="recruiters-bg-video"
+              src="/profiles/adven-compressed.mp4"
+              autoPlay
+              loop
+              muted
+            ></video>
         </div>
 
         <div className="recruiters-overlay">
