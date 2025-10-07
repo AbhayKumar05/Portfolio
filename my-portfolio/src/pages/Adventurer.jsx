@@ -25,12 +25,12 @@ export default function Adventurer() {
       <div className="recruiters-bg-container">
          <div className="video-background">
             <video
-              className="recruiters-bg-video"
-              src="profiles/adven-compressed.mp4"
+              className={`recruiters-bg-video ${isLoaded ? "loaded" : ""}`}
+              src="/profiles/recruter-compressed.mp4"
               autoPlay
               loop
               muted
-              playsInline
+              onCanPlayThrough={() => setIsLoaded(true)}
             />
         </div>
 
