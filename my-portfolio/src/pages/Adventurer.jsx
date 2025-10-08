@@ -24,13 +24,11 @@ export default function Adventurer() {
 
       <div className="recruiters-bg-container">
          <div className="video-background">
-            <video
-              className="recruiters-bg-video"
-              src="/profiles/adven-small.gif"
-              autoPlay
-              loop
-              muted
-            ></video>
+            <img
+            className="recruiters-bg-video"
+            src="/profiles/advv2.gif"
+            alt="Animated background"
+          />
         </div>
         <div className="recruiters-overlay">
           <h1>ABHAY KUMAR</h1>

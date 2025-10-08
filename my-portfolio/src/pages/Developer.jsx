@@ -22,13 +22,15 @@ export default function Developer() {
       <Navbar />
 
       <div className="recruiters-bg-container">
-         <div className="video-background">
-          <iframe
-            src="https://www.youtube.com/embed/onVhbeY7nLM?autoplay=1&mute=1&loop=1&playlist=onVhbeY7nLM&controls=0&showinfo=0&modestbranding=1&showinfo=0&fs=0&rel=0&disablekb=1modestbranding=1&controls=0&fs=0&rel=0&showinfo=0&disablekb=1"
-            allow="autoplay; fullscreen"
-            allowFullScreen
-          ></iframe>
-        </div>
+      <div className="video-background">
+        <img
+          className="recruiters-bg-video"
+          src="/profiles/devvv1.gif"
+          alt="Animated background"
+        />
+      </div>
+
+
 
         <div className="recruiters-overlay">
           <h1>ABHAY KUMAR</h1>

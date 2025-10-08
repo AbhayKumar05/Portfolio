@@ -23,12 +23,11 @@ export default function Recruiter() {
       <Navbar />
       <div className="recruiters-bg-container">
          <div className="video-background">
-            <iframe
-          className="hero-bg-video-iframe"
-          src="https://www.youtube.com/embed/QOtuX0jL85Y?autoplay=1&mute=1&loop=1&playlist=QOtuX0jL85Y&controls=0&modestbranding=1&showinfo=0&fs=0&rel=0&disablekb=1modestbranding=1&controls=0&fs=0&rel=0&showinfo=0&disablekb=1"
-          allow="autoplay; fullscreen"
-          allowFullScreen
-        ></iframe>
+          <img
+            className="recruiters-bg-video"
+            src="/profiles/devv1.gif"
+            alt="Animated background"
+        />
         </div>
 
       <div className="recruiters-overlay">
