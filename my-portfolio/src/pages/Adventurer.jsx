@@ -26,7 +26,7 @@ export default function Adventurer() {
          <div className="video-background">
             <video
               className="recruiters-bg-video"
-              src="https://drive.google.com/file/d/1s84sL4DwZJhr504yP-nSdd2U48fEpuLd/view?usp=share_link"
+              src="/profiles/adven-compressed.gif"
               autoPlay
               loop
               muted
