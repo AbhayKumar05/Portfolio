@@ -25,7 +25,7 @@ export default function Developer() {
       <div className="video-background">
         <img
           className="recruiters-bg-video"
-          src="/profiles/devvv1.gif"
+          src="/profiles/devv1.gif"
           alt="Animated background"
         />
       </div>

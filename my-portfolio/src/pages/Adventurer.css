@@ -30,6 +30,31 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
 scroll-snap-align: center;
 }
 
+.carousel-box-adventurer:nth-child(1){
+  background-image: url(/profiles/blog.png);
+}
+
+.carousel-box-adventurer:nth-child(2){
+  background-image: url(/profiles/bookshelf1.png);
+}
+
+.carousel-box-adventurer:nth-child(3){
+  background-image: url(/profiles/music.png);
+}
+
+.carousel-box-adventurer:nth-child(4){
+  background-image: url(/profiles/adventure.png);
+}
+
+.carousel-box-adventurer:nth-child(5){
+  background-image: url(/profiles/hackathon1.png);
+}
+
+.carousel-box-adventurer:nth-child(6){
+  background-image: url(/profiles/principle.png);
+}
+
+
 .carousel-box-adventurer:hover {
 transform: scale(1.05);
 box-shadow: 0 6px 16px rgba(60, 60, 60, 0.4);

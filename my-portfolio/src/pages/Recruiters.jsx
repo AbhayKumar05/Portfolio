@@ -25,9 +25,9 @@ export default function Recruiter() {
          <div className="video-background">
           <img
             className="recruiters-bg-video"
-            src="/profiles/devv1.gif"
+            src="/profiles/devvv1.gif"
             alt="Animated background"
-        />
+          />
         </div>
 
       <div className="recruiters-overlay">
