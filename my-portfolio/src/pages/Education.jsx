@@ -1,6 +1,9 @@
 import React from "react";
 import "./Education.css";
+import "./Project.css";
 import Navbar from "../components/Navbar"; 
+
+
 
 const educationData = [
   {
@@ -14,7 +17,7 @@ const educationData = [
     id: 2,
     title: "AWS Training & Certification",
     description:
-      "Completion Certificate: AWS SimuLearn – Cloud Computing Essentials. Completed September 20, 2025. Awarded to Abhay Kumar. Verified by Michelle Vaz, Director of AWS Training & Certification.",
+      "Completion Certificate: AWS SimuLearn – Cloud Computing Essentials. Completed September 20, 2025. Verified by Michelle Vaz, Director of AWS Training & Certification.",
     image: "profiles/aws.png", 
   },
   {
@@ -26,11 +29,16 @@ const educationData = [
   },
 ];
 
+
 export default function Education() {
+  const [activeEducation, setActiveEducation] = React.useState(null);
+
   return (
+
+      
     <>
       <Navbar />
-      <div className="education-page">
+      {/*<div className="education-page">
         <div className="education-list">
           {educationData.map((edu) => (
             <div className="education-card" key={edu.id}>
@@ -39,12 +47,51 @@ export default function Education() {
               </div>
               <div className="education-info">
                 <h3>{edu.title}</h3>
-                <p>{edu.description}</p>
+                <p>{edu.description.slice(0, 150)}...</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>*/}
+      <div className="education-page">
+        <div className="education-list">
+          {educationData.map((edu) => (
+            <div
+              className="education-card"
+              key={edu.id}
+              onClick={() => setActiveEducation(edu)}
+            >
+              <div className="education-image">
+                <img src={edu.image} alt={edu.title} />
+              </div>
+
+              <div className="education-info">
+                <h3>{edu.title}</h3>
+                <p>{edu.description.slice(0, 120)}...</p>
               </div>
             </div>
           ))}
         </div>
       </div>
-    </>
+
+      {activeEducation && (
+        <div className="education-modal-overlay" onClick={() => setActiveEducation(null)}>
+          <div
+            className="education-modal"
+            onClick={(e) => e.stopPropagation()} 
+          >
+            <div className="modal-image">
+              <img src={activeEducation.image} alt={activeEducation.title} />
+            </div>
+            <div className="modal-content">
+              <h2>{activeEducation.title}</h2>
+              <p>{activeEducation.description}</p>
+            </div>
+          </div>
+        </div>
+      )}
+    </> 
   );
 }
+
+      
